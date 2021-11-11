@@ -17,7 +17,9 @@ function App() {
     <div className="App">
       {films.map((film) => (
         <Film key={`film__${film.id}`} title={film.title}>
+          <img className='Poster' src={film.img} />
           {film.content}
+          <li>Rating: {film.rating}</li>
         </Film>
       ))}
     </div>

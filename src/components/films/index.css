@@ -5,7 +5,6 @@
     min-height: 100px;
     margin: 10px 5px;
     padding: 10px;
-    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
     border-radius: 5px;
     font-family: "Permanent Marker", cursive;
   }
@@ -24,4 +23,9 @@
     justify-content: center;
     flex-grow: 1;
     color: #4c4c4c;
+    font-size: .7rem;
   }
+.Poster{
+  height: 15rem;
+  width:auto;
+}
