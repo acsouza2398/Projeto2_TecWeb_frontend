@@ -1,18 +1,19 @@
 .card {
-    width: 200px;
+    width: 12rem;
     display: flex;
     flex-direction: column;
-    min-height: 100px;
-    margin: 10px 5px;
+    min-height: 20rem;
+    margin: 1rem 1rem;
     padding: 10px;
     border-radius: 5px;
     font-family: "Permanent Marker", cursive;
+    background-color: lightgray;
   }
   
   .card-title {
     font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 0.2rem;
     font-size: 1.2rem;
   }
   
@@ -28,4 +29,36 @@
 .Poster{
   height: 15rem;
   width:auto;
+}
+
+
+/* botão de deletar */
+.btn_change {
+  background-color: red;
+  color:white;
+  border:none;
+  border-radius: 0.2rem;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.12), 0 2px 7px rgba(0,0,0,0.24);
+  font-size: 0.8rem;
+}
+
+/* altera a cor do botão de deletar quando clica */
+.btn_change:focus {     
+  background-color:darkred;    
+}
+
+/* input do id */
+.id{
+  background-color: #ffffff00; /* cor de fundo do input transparente */
+  border:none;
+  -webkit-appearance: none;
+  outline: none;
+  align-items: center;
+  text-align:center;
+}
+
+/* tirando a borda do input do id quando selecionado */
+.id:focus{
+  border:none;
+  -webkit-appearance: none;
 }
