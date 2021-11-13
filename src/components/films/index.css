@@ -63,24 +63,10 @@ input:focus{
   -webkit-appearance: none;
 }
 
-/* cor da fonte do placeholder */
-::placeholder {
-  color: white;
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
-  color: white;
-}
-
-::-ms-input-placeholder {
-  color: white;
-}
-
 /* Formulário */
 .form-card{
-  background-color: darkgreen;
-  color: white;
+  border-color: darkgray;
+  background-color: lightgoldenrodyellow;
   box-shadow: 0 5px 10px rgba(0,0,0,0.12), 0 5px 10px rgba(0,0,0,0.24);
   padding: .7rem;
   border-radius: .5rem;
@@ -94,8 +80,7 @@ input:focus{
 }
 
 .form-card-title{
-  background-color: darkgreen;
-  color: white;
+  background-color: lightgoldenrodyellow;
   border: none;
   font-size: 1.2rem;
   border-radius: 0.2rem;
@@ -116,4 +101,13 @@ input:focus{
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.btn{
+  border:none;
+  background: darkgray;
+  width:100%;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.12), 0 2px 7px rgba(0,0,0,0.24);
+  border-radius: 0.2rem;
+  padding: 0.5rem;
 }
