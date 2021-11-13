@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Film from "./components/films";
 import axios from "axios";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
 import PaginaPrincipal from "./components/PaginaPrincipal";
 import PaginaTop10 from "./components/PaginaTop10";
 
