@@ -16,6 +16,7 @@ export default function Film(props) {
         <h3 className="card-title">{props.title}</h3>
         <img className='Poster' src={props.img} />
         <div className="card-content">{props.children}</div>
+        <div className="rating" type='hidden'>{props.rating}</div>
         <button onClick={deleteNote} class="btn_change">Deletar</button>
       </div>
     );
