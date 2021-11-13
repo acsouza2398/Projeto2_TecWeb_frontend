@@ -22,8 +22,11 @@ function App() {
 
   console.log(films);
   return (
-    <div className="App">
-      <div>
+    <div className="Main">
+      <div className="appbar">
+        <p className="subtitle">Filmes e séries</p>
+      </div>
+      <div className="App">
         <BrowserRouter>
           <Routes>
             <Route exact path='/' element={<PaginaPrincipal filmList={films} loadData={loadData}/>}/>

@@ -47,8 +47,8 @@
   background-color:darkred;    
 }
 
-/* input do id */
-.id{
+/* input*/
+input{
   background-color: #ffffff00; /* cor de fundo do input transparente */
   border:none;
   -webkit-appearance: none;
@@ -57,8 +57,63 @@
   text-align:center;
 }
 
-/* tirando a borda do input do id quando selecionado */
-.id:focus{
+/* tirando a borda do input quando selecionado */
+input:focus{
   border:none;
   -webkit-appearance: none;
+}
+
+/* cor da fonte do placeholder */
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+/* Formulário */
+.form-card{
+  background-color: darkgreen;
+  color: white;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.12), 0 5px 10px rgba(0,0,0,0.24);
+  padding: .7rem;
+  border-radius: .5rem;
+  margin: 2rem; 
+  width:35%;
+  display:flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+
+}
+
+.form-card-title{
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-container{
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
