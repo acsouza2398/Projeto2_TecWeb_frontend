@@ -2,26 +2,33 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Film from "./components/films";
 import axios from "axios";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import PaginaPrincipal from "./components/PaginaPrincipal";
 
 function App() {
   const [films, setFilms] = useState([]); // Remova o array de notes que existia na versão anterior
 
-  useEffect(() => {
+  const loadData = () => {
     axios
       .get("http://localhost:8000/api/films/")
       .then((res) => setFilms(res.data));
+  }
+
+  useEffect(() => {
+    loadData();
   }, []);
+
 
   console.log(films);
   return (
     <div className="App">
-      {films.map((film) => (
-        <Film key={`film__${film.id}`} title={film.title}>
-          <img className='Poster' src={film.img} />
-          {film.content}
-          <li>Rating: {film.rating}</li>
-        </Film>
-      ))}
+      <div>
+        <BrowserRouter>
+          <Routes>
+            <Route exact path='/' element={<PaginaPrincipal filmList={films} loadData={loadData}/>}/>
+          </Routes>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }
