@@ -9,15 +9,7 @@ export default function Film(props) {
     axios
       .delete(`https://whispering-crag-34320.herokuapp.com/api/films/${props.id}`)
       .then((res) => props.reloadData());
-  };
-  const openFilm = () => {
-    //deleta nota
-    //para isso funcionar você deve implementar a ação de deletar no Django REST
-    //Note que o comando abaixo envia uma requisição com o verbo DELETE
-    console.log(props.id)
-    axios
-      .get(`https://whispering-crag-34320.herokuapp.com/api/films/${props.id}`)
-      .then((res) => console.log("Open film ", res));
+      window.location.reload();
   };
   
   return (

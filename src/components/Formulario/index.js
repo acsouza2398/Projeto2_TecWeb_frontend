@@ -16,6 +16,7 @@ export default function Formulario(props){
             .then((response) => {
                 setTitle("");
                 props.onSubmitFormulario();
+                window.location.reload();
             });
     }
 
