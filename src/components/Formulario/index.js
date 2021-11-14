@@ -12,7 +12,7 @@ export default function Formulario(props){
     const CreateFilm = (event) => {
         event.preventDefault();
         axios
-            .post("http://localhost:8000/api/films/", {title:titleFilm})
+            .post("https://sheltered-woodland-32459.herokuapp.com/api/films/", {title:titleFilm})
             .then((response) => {
                 setTitle("");
                 props.onSubmitFormulario();

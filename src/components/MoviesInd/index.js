@@ -11,7 +11,7 @@ export default function MoviesInd(props) {
     //para isso funcionar você deve implementar a ação de deletar no Django REST
     //Note que o comando abaixo envia uma requisição com o verbo DELETE
     axios
-      .delete(`http://localhost:8000/api/films/${props.id}`)
+      .delete(`https://sheltered-woodland-32459.herokuapp.com/api/films/${props.id}`)
       .then((res) => props.reloadData());
   };
 

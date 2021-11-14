@@ -11,7 +11,7 @@ function App() {
   
   const loadData = () => {
     axios
-      .get("http://localhost:8000/api/films/")
+      .get("https://sheltered-woodland-32459.herokuapp.com/api/films/")
       .then((res) => setFilms(res.data));
   }
 
