@@ -8,8 +8,8 @@ export default function Film(props) {
     //Note que o comando abaixo envia uma requisição com o verbo DELETE
     axios
       .delete(`https://whispering-crag-34320.herokuapp.com/api/films/${props.id}`)
-      .then((res) => props.reloadData());
-      window.location.reload();
+      .then((res) => {window.location.reload(), props.reloadData()});
+      
   };
   
   return (

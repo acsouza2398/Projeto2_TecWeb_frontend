@@ -15,8 +15,8 @@ export default function Formulario(props){
             .post("https://whispering-crag-34320.herokuapp.com/api/films/", {title:titleFilm})
             .then((response) => {
                 setTitle("");
-                props.onSubmitFormulario();
                 window.location.reload();
+                props.onSubmitFormulario();
             });
     }
 
