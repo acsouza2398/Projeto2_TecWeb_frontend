@@ -15,15 +15,10 @@ export default function PaginaPrincipal(props) {
             id={film.id}
             reloadData={props.loadData}
             >
-            {film.content}
+            <div className="sinopse"> Sinopse:</div> {film.content}
           </Film>
         ))}
       </div>
-      <a href="/top">
-        <button className="btn">
-            Top 10
-        </button>
-      </a>
     </main>
   );
 }

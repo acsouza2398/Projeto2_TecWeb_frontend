@@ -29,7 +29,7 @@ export default function Formulario(props){
             value={titleFilm}
             onChange={titleChanged}
             />
-            <button className="btn" type="submit">Criar</button>
+            <button className="btn" type="submit">Adicionar</button>
         </form>
     );
 }
