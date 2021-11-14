@@ -26,11 +26,11 @@ export default function Formulario(props){
             className="form-card-title"
             type="text"
             name="titulo"
-            placeholder="Nome do Filme"
+            placeholder="Name of Movie"
             value={titleFilm}
             onChange={titleChanged}
             />
-            <button className="btn" type="submit">Adicionar</button>
+            <button className="btn" type="submit">Add</button>
         </form>
     );
 }

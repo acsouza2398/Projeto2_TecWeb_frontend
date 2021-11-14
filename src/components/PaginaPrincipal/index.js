@@ -15,7 +15,7 @@ export default function PaginaPrincipal(props) {
             id={film.id}
             reloadData={props.loadData}
             >
-            <div className="sinopse"> Sinopse:</div> {film.content}
+            <div className="sinopse"> Synopsis:</div> {film.content}
           </Film>
         ))}
       </div>

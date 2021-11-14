@@ -19,7 +19,7 @@ export default function Film(props) {
         <div className="card-content">
           {props.children}</div>
         <div className="rating" type='hidden'>{props.rating}</div>
-        <button onClick={deleteFilm} className="btn_change">Deletar</button>
+        <button onClick={deleteFilm} className="btn_change">Delete</button>
       </div>
     );
   }

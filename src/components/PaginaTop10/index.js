@@ -15,7 +15,7 @@ export default function PaginaTop10(props) {
             id={film.id}
             reloadData={props.loadData}
             >
-            <div className="sinopse"> Nota do filme:</div> {film['rating']}
+            <div className="sinopse"> Rating:</div> {film['rating']}
           </Film>
         ))}
       </div>

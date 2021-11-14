@@ -23,10 +23,10 @@ function App() {
     <div className="Main">
       <div className="appbar">
         <img className="logo" src="https://cdn-icons-png.flaticon.com/512/3163/3163508.png" alt=""/>
-        <p className="subtitle">Filmes e Séries</p>
+        <p className="subtitle">Movies and Series</p>
         <a href="/">
           <button className="btn">
-            Adicionar
+            Add Movies
           </button>
         </a>
         <a href="/top">
